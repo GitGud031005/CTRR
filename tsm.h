@@ -3,18 +3,14 @@
 
 #include <iostream>
 #include <vector>
-#include <limits>
-#include <iomanip>
 #include <algorithm>
-#include <cstring>
+#include <random>
+#include <cmath>
 #include <string>
 
 using namespace std;
-
-string Traveling(int [20][20], int, char);
-vector<int> reconstructPath(int, const vector<vector<int> >&, int, int);
-void findMinCost(int [20][20], int, vector<vector<int> >, int, int&, int&);
-void DPtable(int [20][20], int, vector<vector<int> >&, vector<vector<int> >&);
-
+// Ant Colony Optimization for TSP.
+// Returns a space-separated tour that ends at the start (e.g., "A B C ... A").
+string Traveling(int G[60][60], int n, char start);
 
 #endif // TSP_H
